@@ -1,0 +1,29 @@
+.footer-container {
+    background-color: #0d1117;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 1rem;
+    opacity: 0.85;
+    box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.05);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* 🔹 Glowing Text Effect */
+  .footer-container p {
+    color: #89CFF0;
+    text-shadow: 0px 0px 10px rgba(137, 207, 240, 0.5);
+  }
+  
+  /* 🌟 Hover Effect */
+  .footer-container:hover {
+    opacity: 1;
+  }
+  
+  /* 🏆 Responsive Fixes */
+  @media (max-width: 600px) {
+    .footer-container {
+      font-size: 0.9rem;
+    }
+  }
+  

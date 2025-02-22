@@ -1,0 +1,69 @@
+/* 🔥 About Section - Final Enhanced Version */
+.about-container {
+  font-family: 'Lora', serif;  /* Elegant, readable font */
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: left;
+  width: 80%;
+  margin: auto;
+  padding: 100px 0;
+  color: #E2E2E2;  /* Slightly brighter text for better contrast */
+}
+
+/* Title Styling */
+.about-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #89CFF0;
+  text-shadow: 0px 0px 15px rgba(137, 207, 240, 0.6);  /* Softer, refined glow */
+  margin-bottom: 10px; /* Reduced spacing for a cleaner look */
+}
+
+/* Story Body */
+.about-text {
+  font-weight: 400;
+  max-width: 850px;
+}
+
+/* 📖 Paragraph Styling */
+.about-description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2; /* Balanced line height */
+  max-width: 900px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+/* ✨ Responsive Fixes */
+@media (max-width: 900px) {
+  .about-container {
+      padding: 100px 10%;
+  }
+
+  .about-title {
+      font-size: 3.2rem;
+      text-shadow: 0px 0px 12px rgba(137, 207, 240, 0.5);
+  }
+
+  .about-description {
+      font-size: 1.5rem;
+      line-height: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+      padding: 80px 8%;
+  }
+
+  .about-title {
+      font-size: 3rem;
+      text-shadow: 0px 0px 10px rgba(137, 207, 240, 0.4);
+  }
+
+  .about-description {
+      font-size: 1.3rem;
+      line-height: 1.8;
+  }
+}
