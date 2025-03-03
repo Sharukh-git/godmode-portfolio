@@ -1,5 +1,6 @@
 /* 🚀 Hero Section */
 .hero-container {
+    position: relative;  /* ✅ Add this */
     display: flex;
     align-items: center;
     justify-content: center;

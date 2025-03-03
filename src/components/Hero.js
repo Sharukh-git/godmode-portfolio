@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../styles/global.css";
 import profilePic from "../assets/profile.jpg";
+import SayHiButton from "./SayHiButton"; 
 
 const Hero = ({ aboutRef }) => {
   const handleScroll = () => {
@@ -30,21 +31,21 @@ const Hero = ({ aboutRef }) => {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <h1 className="hero-title">Hi, I'm <span className="highlight">Sharukh</span></h1>
-
-        {/* Subtitle aligned properly */}
         <h2 className="hero-subtitle">A passionate Software Engineer.</h2>
 
-        {/* Button moved slightly down */}
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
           className="scroll-button"
           onClick={handleScroll}
-          style={{ marginTop: "50px" }} 
         >
           Know More About Me
         </motion.button>
       </motion.div>
+
+      {/* ✅ Say Hi Button Now Inside Hero */}
+      <SayHiButton /> 
+
     </section>
   );
 };

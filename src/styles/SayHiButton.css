@@ -1,0 +1,103 @@
+/* ✅ Button Stays Inside Hero */
+.hero-say-hi-container {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  animation: float 3s ease-in-out infinite; /* Floating effect */
+}
+
+/* ✅ Button Styling */
+.say-hi-btn {
+  background: rgba(255, 255, 255, 0.05);
+  color: #00aaff;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #00aaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 4px 10px rgba(0, 170, 255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Bell Icon */
+.say-hi-btn .bell-icon {
+  font-size: 18px;
+  color: #ffcc00;
+}
+
+/* ✅ Button Hover Effect */
+.say-hi-btn:hover {
+  transform: scale(1.1);
+  background: rgba(30, 30, 30, 0.95);
+  box-shadow: 0 6px 15px rgba(0, 170, 255, 0.7);
+}
+
+/* ✅ Click Effect */
+.say-hi-btn:active {
+  transform: scale(0.9);
+}
+
+/* ✅ Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ✅ Message Styling with Minimal Glow */
+.toast-message {
+  position: absolute;
+  bottom: 140%; /* Increased position to prevent overlap */
+  right: 0;
+  background: rgba(255, 255, 255, 0.05); /* Slightly more visible */
+  color: white; /* Light text for better readability */
+  padding: 14px 20px; /* Slightly more padding */
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+  width: 250px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.5s ease-in forwards, stayVisible 4s forwards, fadeOut 1s ease-in-out forwards;
+
+  /* ✅ Softer Glow Effect */
+  text-shadow: 0 0 1.5px rgba(0, 170, 255, 0.2); /* Very light glow */
+  border: 1px solid rgba(0, 170, 255, 0.15); /* Softer border */
+  box-shadow: none; /* Removed outer glow */
+}
+
+/* ✅ Message Stays Longer */
+@keyframes stayVisible {
+  0% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+/* ✅ Mobile Fixes */
+@media (max-width: 768px) {
+  .hero-say-hi-container {
+      bottom: 20px;
+      right: 10px;
+  }
+  .say-hi-btn {
+      padding: 10px 16px;
+      font-size: 12px;
+  }
+  .say-hi-btn .bell-icon {
+      font-size: 16px;
+  }
+  .toast-message {
+      bottom: 145%; /* Adjusted for mobile */
+      font-size: 12px;
+      width: 190px;
+  }
+}

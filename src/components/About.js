@@ -36,7 +36,7 @@ const About = forwardRef((props, ref) => {
 
         <p>
           Fast forward to my final year, I decided to test the waters and attended a few placement 
-          drives. <b>Boom!</b> Landed an internship at <b>Accenture</b>. A year later, I transitioned into a full-time 
+          drives. <b>Boom!</b> Landed an internship at <b>Accenture</b>. A few months later, I transitioned into a full-time 
           <b> Backend Developer</b> role at <b>Infosys</b>. I spent my days battling complex APIs, databases, and 
           server-side logic, and every time I cracked a tough issue, I felt that high—like a 
           detective solving a mind-bending case.

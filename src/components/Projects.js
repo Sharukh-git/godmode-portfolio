@@ -30,12 +30,7 @@ const Projects = () => {
             tech: "JavaFX | SQLite",
           },
           {
-            title: "Infosys Data Workbench Contributions",
-            description: "Enhanced the data pipeline with Java, Spark, and XGBoost, improving performance by 60%.",
-            tech: "Java | Spark | XGBoost",
-          },
-          {
-            title: "Portfolio Website (This One!)",
+            title: "Portfolio Website",
             description: "Built using React, hosted on Netlify with AWS CloudFront for performance optimization.",
             tech: "React | AWS | Netlify",
           }
@@ -58,6 +53,20 @@ const Projects = () => {
             </div>
           </motion.div>
         ))}
+
+        {/* "More Projects Coming Soon" Block */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }} 
+          whileInView={{ opacity: 1, scale: 1 }} 
+          transition={{ duration: 0.8, delay: 0.6 }} 
+          viewport={{ once: true }} 
+          className="project-card coming-soon"
+        >
+          <h3>🚧 More Projects Coming Soon 🚧</h3>
+          <p className="project-description">
+            Exciting new projects are in development. Stay tuned for updates!
+          </p>
+        </motion.div>
       </div>
     </section>
   );

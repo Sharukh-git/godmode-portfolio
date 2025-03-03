@@ -43,7 +43,7 @@ const Contact = () => {
           <FaLinkedin className="contact-icon" /> LinkedIn
         </a>
         <a href="mailto:sharukhshaik.012@gmail.com">
-          <FaEnvelope className="contact-icon" /> Email Me
+          <FaEnvelope className="contact-icon" /> Email
         </a>
       </motion.div>
     </section>
