@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../styles/global.css";
 import profilePic from "../assets/profile.jpg";
-import SayHiButton from "./SayHiButton"; 
+
 
 const Hero = ({ aboutRef }) => {
   const handleScroll = () => {
@@ -43,8 +43,7 @@ const Hero = ({ aboutRef }) => {
         </motion.button>
       </motion.div>
 
-      {/* ✅ Say Hi Button Now Inside Hero */}
-      <SayHiButton /> 
+     
 
     </section>
   );
